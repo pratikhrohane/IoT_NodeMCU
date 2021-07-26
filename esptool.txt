@@ -1,0 +1,5 @@
+Erase ESP8266:
+esptool.py --port ESP8266_PORTNAME erase_flash
+
+Program ESP8266:
+esptool.py --port ESP8266_PORTNAME --baud 115200 write_flash --flash_size=detect 0 firmware.bin
